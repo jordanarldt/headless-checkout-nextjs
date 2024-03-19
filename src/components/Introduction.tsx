@@ -7,7 +7,7 @@ export const Introduction: React.FC = () => (
     </h1>
     <p>
       This is a simple example of a headless storefront with BigCommerce. Mainly aimed to
-      show the headless flow of creating a cart and proceeding to an embedded checkout.
+      show the headless flow of creating a cart and proceeding to a checkout.
     </p>
   </Section>
 );

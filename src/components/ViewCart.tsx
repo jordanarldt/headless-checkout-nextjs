@@ -25,9 +25,6 @@ export const ViewCart: React.FC = async () => {
       return;
     }
 
-    // Very rudimentary here. In a real app, you would want to handle this differently.
-    // If we have a situation where we delete the cart but the cookie still exists, we'll
-    // get stuck in a redirect loop.
     try {
       await deleteCartMutation(client, cartId);
       cookies().delete(CART_COOKIE_KEY);
